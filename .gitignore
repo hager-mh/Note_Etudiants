@@ -1,0 +1,17 @@
+# Éléments à ne pas partager sur GitHub
+ 
+# Outils installés sur ce poste
+.venv/
+# Fichiers temporaires
+__pycache__/
+# Registre des notes
+*.db
+# Réglages propres à ce poste
+.env
+
+.venv/
+.venv-1/
+__pycache__/
+.pytest_cache/
+*.db
+.env
