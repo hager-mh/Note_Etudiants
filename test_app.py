@@ -31,3 +31,9 @@ def test_liste_notes():
 def test_recherche_etudiant():
     reponse = client.get("/notes?etudiant=Amina")
     assert reponse.get_json()[0]["note"] == 15.5
+
+# Test 5 : Vérifier la version de l'application
+def test_version():
+    reponse = client.get("/health")
+    assert reponse.status_code == 200
+    assert reponse.get_json()["version"] == "1.0"
